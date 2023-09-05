@@ -20,7 +20,7 @@ struct HolidayListView: View {
             }
             .onChange(of: holidayVM.nextHoliday) { newNextHoliday in
                 if let nextHoliday = newNextHoliday {
-                    withAnimation(.easeInOut(duration: 3.0)) {
+                    withAnimation(.easeInOut(duration: 5.0)) {
                         scrollView.scrollTo(nextHoliday.id, anchor: .top)
                     }
                 }
