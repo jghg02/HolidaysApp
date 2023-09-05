@@ -13,7 +13,7 @@ struct HolidaysssApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
                 .environmentObject(dateViewModel)
         }
     }
