@@ -19,7 +19,7 @@ struct ContentView: View {
     var body: some View {
 
         HolidayListView(holidays: self.vm.holidays, holidayVM: self.vm)
-            .navigationTitle("Feriados")
+            .navigationTitle("holidays".localized)
             .embedNavigationView()
             .task {
                 await self.vm.getAllHolidays()

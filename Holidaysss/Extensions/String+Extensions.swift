@@ -29,4 +29,8 @@ extension String {
 
         return (day: dayString, weekday: weekdaySymbol, month: monthSymbol)
     }
+
+    var localized: String {
+        return NSLocalizedString(self, comment: "")
+    }
 }
