@@ -11,7 +11,11 @@ struct HolidayCell: View {
 
     let holiday: Holiday
     @State private var isBorderAnimated = false
+    @State private var isNotificationActive = false
     var isNextHoliday: Bool
+
+    // Notification Manager
+    @ObservedObject private var notificationManager = NotificationManager()
 
     var body: some View {
         HStack {
@@ -35,10 +39,10 @@ struct HolidayCell: View {
                 Group {
                     if isNextHoliday {
                         /// TODO:
-///                 The animation might be stopping when you scroll because the onAppear modifier is
-///                 called again when the view appears after scrolling, and it sets isBorderAnimated
-///                 to true again, which interrupts the ongoing animation.
-///                 The onAppear { isBorderAnimated = true } is over VStack
+                        ///                 The animation might be stopping when you scroll because the onAppear modifier is
+                        ///                 called again when the view appears after scrolling, and it sets isBorderAnimated
+                        ///                 to true again, which interrupts the ongoing animation.
+                        ///                 The onAppear { isBorderAnimated = true } is over VStack
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(isBorderAnimated ? Color.blue : Color.orange, lineWidth: 2)
                             .animation(Animation.linear(duration: 1).repeatForever(autoreverses: true), value: isBorderAnimated)
@@ -63,17 +67,36 @@ struct HolidayCell: View {
                         .cornerRadius(4)
                         .padding(.leading)
                 }
-                Spacer()
+
                 if let coundown = holiday.getCountdown() {
+                    Spacer()
                     Text(coundown)
                         .font(.footnote)
                         .padding(.leading)
                         .foregroundColor(.blue)
                 }
                 Spacer()
+                if holiday.getCountdown() != "passed".localized {
+                    HStack {
+                        Spacer()
+                        Button {
+                            if !self.isNotificationActive {
+                                notificationManager.requestNotificationPermissions(by: holiday)
+                            } else {
+                                notificationManager.cancelNotification(for: holiday)
+                                self.isNotificationActive = true
+                            }
+                            self.isNotificationActive.toggle()
+                        } label: {
+                            Image(systemName: self.isNotificationActive ?
+                                  "person.2.wave.2.fill" : "person.2.wave.2")
+                                .padding() // Add padding to increase tappable area
+                        }
+                    }
+                }
             }
         }
-        .frame(height: 150)
+        .frame(height: 170)
         .onAppear {
             if isNextHoliday {
                 isBorderAnimated = true
@@ -84,6 +107,6 @@ struct HolidayCell: View {
 
 struct HolidayCell_Previews: PreviewProvider {
     static var previews: some View {
-        HolidayCell(holiday: Holiday(name: "Dia de las Glorias Navales", comments: "", date: "2023-12-09", isEssential: "1", type: "Civil"), isNextHoliday: true)
+        HolidayCell(holiday: Holiday(name: "Dia de las Glorias Navales", comments: "", date: "2023-02-09", isEssential: "0", type: "Civil"), isNextHoliday: true)
     }
 }
