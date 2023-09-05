@@ -10,13 +10,12 @@ import SwiftUI
 struct HolidayListView: View {
 
     let holidays: [Holiday]
-    var scrollToNextHoliday: (() -> Void)?
     @ObservedObject var holidayVM: HolidayViewModel
 
     var body: some View {
         ScrollViewReader { scrollView in
             List(holidays, id: \.id) { current in
-                HolidayCell(holiday: current)
+                HolidayCell(holiday: current, isNextHoliday: current.id == holidayVM.nextHoliday?.id)
             }
             .onChange(of: holidayVM.nextHoliday) { newNextHoliday in
                 if let nextHoliday = newNextHoliday {

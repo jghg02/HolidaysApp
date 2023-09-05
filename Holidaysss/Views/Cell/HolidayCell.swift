@@ -10,6 +10,8 @@ import SwiftUI
 struct HolidayCell: View {
 
     let holiday: Holiday
+    @State private var isBorderAnimated = false
+    var isNextHoliday: Bool
 
     var body: some View {
         HStack {
@@ -29,6 +31,19 @@ struct HolidayCell: View {
             .frame(width: 130)
             .background(Color.gray.opacity(0.1))
             .cornerRadius(10)
+            .overlay(
+                Group {
+                    if isNextHoliday {
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(isBorderAnimated ? Color.blue : Color.orange, lineWidth: 2)
+                            .animation(Animation.linear(duration: 1).repeatForever(autoreverses: true), value: isBorderAnimated)
+                    }
+                }
+            )
+            .onAppear {
+                isBorderAnimated = true
+            }
+
 
             VStack(alignment: .leading) {
                 Text(holiday.name)
@@ -54,11 +69,16 @@ struct HolidayCell: View {
             }
         }
         .frame(height: 150)
+        .onAppear {
+            if isNextHoliday {
+                isBorderAnimated = true
+            }
+        }
     }
 }
 
 struct HolidayCell_Previews: PreviewProvider {
     static var previews: some View {
-        HolidayCell(holiday: Holiday(name: "Dia de las Glorias Navales", comments: "", date: "2023-12-09", isEssential: "1", type: "Civil"))
+        HolidayCell(holiday: Holiday(name: "Dia de las Glorias Navales", comments: "", date: "2023-12-09", isEssential: "1", type: "Civil"), isNextHoliday: true)
     }
 }
