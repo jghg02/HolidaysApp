@@ -34,6 +34,11 @@ struct HolidayCell: View {
             .overlay(
                 Group {
                     if isNextHoliday {
+                        /// TODO:
+///                 The animation might be stopping when you scroll because the onAppear modifier is
+///                 called again when the view appears after scrolling, and it sets isBorderAnimated
+///                 to true again, which interrupts the ongoing animation.
+///                 The onAppear { isBorderAnimated = true } is over VStack
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(isBorderAnimated ? Color.blue : Color.orange, lineWidth: 2)
                             .animation(Animation.linear(duration: 1).repeatForever(autoreverses: true), value: isBorderAnimated)

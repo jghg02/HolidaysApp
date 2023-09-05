@@ -15,7 +15,8 @@ struct HolidayListView: View {
     var body: some View {
         ScrollViewReader { scrollView in
             List(holidays, id: \.id) { current in
-                HolidayCell(holiday: current, isNextHoliday: current.id == holidayVM.nextHoliday?.id)
+                HolidayCell(holiday: current,
+                            isNextHoliday: current.id == holidayVM.nextHoliday?.id)
             }
             .onChange(of: holidayVM.nextHoliday) { newNextHoliday in
                 if let nextHoliday = newNextHoliday {
