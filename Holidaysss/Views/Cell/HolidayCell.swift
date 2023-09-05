@@ -55,7 +55,7 @@ struct HolidayCell: View {
                     .font(.headline)
                     .padding(.leading)
                 if holiday.isEssential == "1"{
-                    Text("Irrenunciable")
+                    Text("inalienable".localized)
                         .font(.caption)
                         .padding(4)
                         .background(Color.red.opacity(0.8))
