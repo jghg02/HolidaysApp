@@ -55,7 +55,7 @@ extension Holiday {
             return nil
         }
 
-        return dayCount > 0 ? "\(dayCount) days left" : dayCount == 0 ? "Today" : "Passed"
+        return dayCount > 0 ? "dayLefts".localized(with: dayCount) : dayCount == 0 ? "today".localized : "passed".localized
     }
 
 }

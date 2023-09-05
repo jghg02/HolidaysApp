@@ -1,6 +1,6 @@
 
 "holidays" = "Holidays";
 "today" = "Hoy";
-"dayLefts" = "day left";
+"dayLefts" = "%d day left";
 "passed" = "Passed";
 
