@@ -80,6 +80,7 @@ struct HolidayCell: View {
                     HStack {
                         Spacer()
                         Button {
+                            // Notification logic
                             if !self.isNotificationActive {
                                 notificationManager.requestNotificationPermissions(by: holiday)
                             } else {
