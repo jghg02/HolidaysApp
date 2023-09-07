@@ -9,20 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @ObservedObject private var vm: HolidayViewModel
     @EnvironmentObject var dateViewModel: DateViewModel
+    @ObservedObject  private var viewModel: HolidayViewModel
 
     init()  {
-        self.vm = HolidayViewModel()
+        self.viewModel = HolidayViewModel(getHolidaydUseCase: GetHolidaysUseCase(repository: HolidayRepositoryImp()))
     }
 
     var body: some View {
-
-        HolidayListView(holidays: self.vm.holidays, holidayVM: self.vm)
+        HolidayListView(holidays: self.viewModel.holidays,
+                        nextHoliday: self.viewModel.nextHoliday ?? Holiday.defaultValue)
             .navigationTitle("holidays".localized)
             .embedNavigationView()
             .task {
-                await self.vm.getAllHolidays()
+                await self.viewModel.getAllHolidays(by: dateViewModel.currentYear)
+                self.viewModel.getNextHoliday()
             }
     }
 
