@@ -8,21 +8,20 @@
 import SwiftUI
 
 struct HolidayListView: View {
-
+    
     let holidays: [Holiday]
-    @ObservedObject var holidayVM: HolidayViewModel
-
+    let nextHoliday: Holiday
+    
+    
     var body: some View {
         ScrollViewReader { scrollView in
             List(holidays, id: \.id) { current in
                 HolidayCell(holiday: current,
-                            isNextHoliday: current.id == holidayVM.nextHoliday?.id)
+                            isNextHoliday: current.id == self.nextHoliday.id)
             }
-            .onChange(of: holidayVM.nextHoliday) { newNextHoliday in
-                if let nextHoliday = newNextHoliday {
-                    withAnimation(.easeInOut(duration: 5.0)) {
-                        scrollView.scrollTo(nextHoliday.id, anchor: .top)
-                    }
+            .onChange(of: self.nextHoliday) { newNextHoliday in
+                withAnimation(.easeInOut(duration: 5.0)) {
+                    scrollView.scrollTo(newNextHoliday.id, anchor: .top)
                 }
             }
         }
@@ -33,6 +32,6 @@ struct HolidayListView: View {
 
 struct HolidayListView_Previews: PreviewProvider {
     static var previews: some View {
-        HolidayListView(holidays: [Holiday(name: "NAME", comments: "COMMENTS", date: "2023-05-02", isEssential: "true", type: "Type")], holidayVM: HolidayViewModel())
+        HolidayListView(holidays: [Holiday(name: "NAME", comments: "COMMENTS", date: "2023-05-02", isEssential: "true", type: "Type")], nextHoliday: .init(name: "NAME", comments: "COMMENTS", date: "2023-05-02", isEssential: "true", type: "Type"))
     }
 }
