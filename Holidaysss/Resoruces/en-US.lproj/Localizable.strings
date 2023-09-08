@@ -4,4 +4,6 @@
 "dayLefts" = "%d day left";
 "passed" = "Passed";
 "inalienable" = "Inalienable";
+"addNotificationMessage" = "Added remider for this holiday";
+"deleteNotificationMessage" = "Deleted remider";
 
