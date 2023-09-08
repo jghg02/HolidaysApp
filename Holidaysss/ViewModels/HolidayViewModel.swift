@@ -21,7 +21,12 @@ class HolidayViewModel: ObservableObject {
     }
 
     func getAllHolidays(by year: String) async {
-        self.holidays = await self.getHolidayUsesCase.execute(by: year)
+        do {
+            let fetchedHolidays = await self.getHolidayUsesCase.execute(by: year)
+            DispatchQueue.main.async {
+                self.holidays = fetchedHolidays
+            }
+        }
     }
 
     func getNextHoliday() {
