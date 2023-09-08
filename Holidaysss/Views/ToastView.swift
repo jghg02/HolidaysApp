@@ -15,7 +15,9 @@ struct ToastView: View {
         Text(message)
             .foregroundColor(.white)
             .padding()
-            .background(Capsule().fill(Color.black.opacity(0.7)))
+            .background(Capsule().fill(Color.black.opacity(0.6)))
+            .shadow(radius: 4)
+
     }
 }
 

@@ -4,3 +4,5 @@
 "dayLefts" = "%d días faltantes";
 "passed" = "Este día ya paso";
 "inalienable" = "Irrenunciable";
+"addNotificationMessage" = "Se ha agregado el recordatorio de este feriado";
+"deleteNotificationMessage" = "Se ha eliminado el recordatorio";

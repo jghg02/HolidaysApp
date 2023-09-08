@@ -10,9 +10,11 @@ import SwiftUI
 struct HolidayCell: View {
 
     let holiday: Holiday
+    var isNextHoliday: Bool
+
     @State private var isBorderAnimated = false
     @State private var isNotificationActive = false
-    var isNextHoliday: Bool
+    @ObservedObject private var toastViewModel = ToastViewModel()
 
     // Notification Manager
     @ObservedObject private var notificationManager = NotificationManager()
@@ -38,7 +40,7 @@ struct HolidayCell: View {
             .overlay(
                 Group {
                     if isNextHoliday {
-                        /// TODO:
+                        /// TODO
                         /// The animation might be stopping when you scroll because the onAppear modifier is
                         /// called again when the view appears after scrolling, and it sets isBorderAnimated
                         /// to true again, which interrupts the ongoing animation.
@@ -76,25 +78,30 @@ struct HolidayCell: View {
                         .foregroundColor(.blue)
                 }
                 Spacer()
-                if holiday.getCountdown() != "passed".localized {
-                    HStack {
-                        Spacer()
-                        Button {
-                            // Notification logic
-                            if !self.isNotificationActive {
-                                notificationManager.requestNotificationPermissions(by: holiday)
-                            } else {
-                                notificationManager.cancelNotification(for: holiday)
-                                self.isNotificationActive = true
-                            }
-                            self.isNotificationActive.toggle()
-                        } label: {
-                            Image(systemName: self.isNotificationActive ?
-                                  "person.2.wave.2.fill" : "person.2.wave.2")
-                                .padding() // Add padding to increase tappable area
-                        }
-                    }
-                }
+                Spacer()
+//                if holiday.getCountdown() != "passed".localized {
+//                    HStack {
+//
+//                        Button {
+//                            // Notification logic
+//                            if !self.isNotificationActive {
+//                                notificationManager.requestNotificationPermissions(by: holiday)
+//                                // Animation to show the ToasView
+////                                toastViewModel.show()
+//                            } else {
+//                                notificationManager.cancelNotification(for: holiday)
+//                                self.isNotificationActive = true
+//                                // Animation to show the ToasView
+////                                toastViewModel.show()
+//                            }
+//                            self.isNotificationActive.toggle()
+//                        } label: {
+//                            Image(systemName: self.isNotificationActive ?
+//                                  "person.2.wave.2.fill" : "person.2.wave.2")
+//                            .padding() // Add padding to increase tappable area
+//                        }
+//                    }
+//                }
             }
         }
         .frame(height: 170)
@@ -103,11 +110,25 @@ struct HolidayCell: View {
                 isBorderAnimated = true
             }
         }
+        .overlay(
+            // ToastView overlay
+            Group {
+                if toastViewModel.showToast {
+                    toastViewModel.showToastView(message: self.isNotificationActive ?
+                                                "deleteNotificationMessage".localized : "addNotificationMessage".localized)
+                        .padding()
+                        .offset(y: toastViewModel.toastOffset)
+                        .opacity(toastViewModel.toastOpacity)
+
+                }
+            }
+                .padding(.bottom), alignment: .bottom
+        )
     }
 }
 
 struct HolidayCell_Previews: PreviewProvider {
     static var previews: some View {
-        HolidayCell(holiday: Holiday(name: "Dia de las Glorias Navales", comments: "", date: "2023-02-09", isEssential: "0", type: "Civil"), isNextHoliday: true)
+        HolidayCell(holiday: Holiday(name: "Dia de las Glorias Navales", comments: "", date: "2023-12-09", isEssential: "1", type: "Civil"), isNextHoliday: true)
     }
 }
