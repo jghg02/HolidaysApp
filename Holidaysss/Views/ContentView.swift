@@ -12,6 +12,9 @@ struct ContentView: View {
     @EnvironmentObject var dateViewModel: DateViewModel
     @ObservedObject  private var viewModel: HolidayViewModel
 
+    // Notification Manager
+    @ObservedObject private var notificationManager = NotificationManager()
+
     init()  {
         self.viewModel = HolidayViewModel(getHolidaydUseCase: GetHolidaysUseCase(repository: HolidayRepositoryImp()))
     }

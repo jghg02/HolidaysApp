@@ -14,11 +14,10 @@ class NotificationManager: ObservableObject {
     private var notificationIndetifier: String = ""
     @Published var showToastView: Bool = false
 
-    func requestNotificationPermissions(by data: Holiday) {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { [weak self] success, error in
+    func requestNotificationPermissions() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
             if success {
                 print("Notification permissions granted")
-                self?.scheduleNotification(by: data)
             } else if let error = error {
                 print("Failed to grant notification permissions: \(error.localizedDescription)")
                 // Here, consider providing user-facing error messages
@@ -47,6 +46,7 @@ class NotificationManager: ObservableObject {
     }
 
     func scheduleNotification(by data: Holiday) {
+        print("Schedule....")
         let content = UNMutableNotificationContent()
         content.title = NSLocalizedString(data.name, comment: data.name)
         content.subtitle = NSLocalizedString("🇨🇱", comment: data.date)
@@ -89,6 +89,7 @@ class NotificationManager: ObservableObject {
     }
 
     func cancelNotification(for data: Holiday) {
+        print("Canceled.....")
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [notificationIndetifier])
         getAllPendingNotifications { current in
             print(current)

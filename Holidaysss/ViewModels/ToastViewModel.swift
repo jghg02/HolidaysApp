@@ -9,32 +9,34 @@ import Foundation
 import SwiftUI
 
 class ToastViewModel: ObservableObject {
-    @Published var showToast: Bool = false
-    @Published var toastOffset: CGFloat = 0
-    @Published var toastOpacity: Double = 0.0
+    @Published var showToast = false
+    @Published var toastMessage = ""
+    @Published var toastOffset: CGFloat = 100 // Initial offset to be out of view
+    @Published var toastOpacity: Double = 0.0 // Initial opacity to be fully transparent
 
-    func showToastView(message: String) -> ToastView {
-        return ToastView(message: message)
-    }
+    func show(message: String) {
+        self.toastMessage = message
 
-    func show() {
-        withAnimation(.spring()) {
-            showToast = true
-            toastOffset = self.toastOffset
-            toastOpacity = 1.0
+        // Reset properties to initial values
+        self.toastOffset = 100
+        self.toastOpacity = 0.0
+        self.showToast = true
+
+        // Animate toast entering
+        withAnimation(.easeInOut(duration: 0.5)) {
+            self.toastOffset = 0
+            self.toastOpacity = 1.0
         }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-            withAnimation(.spring()) {
-                self.hide()
+        // After 3 seconds, animate toast exiting
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            withAnimation(.easeInOut(duration: 0.5)) {
+                self.toastOffset = 100
+                self.toastOpacity = 0.0
             }
+            self.showToast = false
         }
-    }
-
-    func hide() {
-        showToast = false
-        toastOffset = -400
-        toastOpacity = 0.0
     }
 }
+
 

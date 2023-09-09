@@ -79,22 +79,22 @@ struct HolidayCell: View {
                 }
                 Spacer()
                 Spacer()
+                Spacer()
 //                if holiday.getCountdown() != "passed".localized {
 //                    HStack {
 //
 //                        Button {
-//                            // Notification logic
-//                            if !self.isNotificationActive {
-//                                notificationManager.requestNotificationPermissions(by: holiday)
-//                                // Animation to show the ToasView
-////                                toastViewModel.show()
-//                            } else {
-//                                notificationManager.cancelNotification(for: holiday)
-//                                self.isNotificationActive = true
-//                                // Animation to show the ToasView
-////                                toastViewModel.show()
-//                            }
+//                            // Toggle the notification active state first
 //                            self.isNotificationActive.toggle()
+//
+//                            if self.isNotificationActive {
+//                                // If now active, schedule the notification
+//                                notificationManager.scheduleNotification(by: holiday)
+//                            } else {
+//                                // If now inactive, cancel the notification
+//                                notificationManager.cancelNotification(for: holiday)
+//                            }
+//
 //                        } label: {
 //                            Image(systemName: self.isNotificationActive ?
 //                                  "person.2.wave.2.fill" : "person.2.wave.2")
@@ -114,11 +114,6 @@ struct HolidayCell: View {
             // ToastView overlay
             Group {
                 if toastViewModel.showToast {
-                    toastViewModel.showToastView(message: self.isNotificationActive ?
-                                                "deleteNotificationMessage".localized : "addNotificationMessage".localized)
-                        .padding()
-                        .offset(y: toastViewModel.toastOffset)
-                        .opacity(toastViewModel.toastOpacity)
 
                 }
             }
@@ -129,6 +124,6 @@ struct HolidayCell: View {
 
 struct HolidayCell_Previews: PreviewProvider {
     static var previews: some View {
-        HolidayCell(holiday: Holiday(name: "Dia de las Glorias Navales", comments: "", date: "2023-12-09", isEssential: "1", type: "Civil"), isNextHoliday: true)
+        HolidayCell(holiday: Holiday(name: "Dia de las Glorias Navales", comments: "", date: "2023-01-09", isEssential: "1", type: "Civil"), isNextHoliday: true)
     }
 }

@@ -10,9 +10,10 @@ import SwiftUI
 struct ToastView: View {
 
     @State var message: String
+    @ObservedObject private var toastViewModel = ToastViewModel()
 
     var body: some View {
-        Text(message)
+        Text(toastViewModel.toastMessage)
             .foregroundColor(.white)
             .padding()
             .background(Capsule().fill(Color.black.opacity(0.6)))
