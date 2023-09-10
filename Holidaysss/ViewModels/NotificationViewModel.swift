@@ -10,16 +10,21 @@ import SwiftUI
 
 class NotificationViewModel: ObservableObject {
 
-    private let notificaitonUsesCase: NotificationUsesCase
+    private let notificatitonUsesCase: NotificationUsesCase
     private var notificationManager = NotificationManager()
     @Published var isNotificationActive = false
 
     init(notificaitonUsesCase: NotificationUsesCase) {
-        self.notificaitonUsesCase = notificaitonUsesCase
+        self.notificatitonUsesCase = notificaitonUsesCase
+    }
+
+    func removeNotification(for holiday: Holiday) {
+        self.notificatitonUsesCase.removeNotification(by: holiday)
+        self.isNotificationActive = false
     }
 
     func handleNotificationTap(for holiday: Holiday) {
-        self.notificaitonUsesCase.requestNotificationPermission { [weak self] userAccepted in
+        self.notificatitonUsesCase.requestNotificationPermission { [weak self] userAccepted in
             guard let self = self else { return }
             if userAccepted {
                 self.notificationManager.scheduleNotification(by: holiday) { isScheduled in

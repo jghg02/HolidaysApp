@@ -18,4 +18,8 @@ class NotificationUsesCase {
         self.repository.requestNotificationPermission(completion: completion)
     }
 
+    func removeNotification(by data: Holiday) {
+        self.repository.removeNotification(by: data)
+    }
+
 }

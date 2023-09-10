@@ -12,6 +12,8 @@ import NotificationCenter
 class NotificationManager: ObservableObject {
 
     @Published var showToastView: Bool = false
+    var notificationMap: [UUID: String] = [:]  // Maps Holiday ID to Notification ID
+
 
     func requestNotificationPermissions(completion: @escaping (Bool) -> Void) {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
@@ -28,7 +30,6 @@ class NotificationManager: ObservableObject {
     }
 
     func scheduleNotification(by data: Holiday, completion: @escaping (Bool) -> Void) {
-        var data = data
         let content = UNMutableNotificationContent()
         content.title = NSLocalizedString(data.name, comment: data.name)
         content.subtitle = NSLocalizedString("🇨🇱", comment: data.date)
@@ -52,14 +53,15 @@ class NotificationManager: ObservableObject {
         components.minute = 0 // Specify the desired minute here
 
         // Step 3: Create a UNCalendarNotificationTrigger with the date components
-        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+        //let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
         // For test
-        //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
 
-        // store the notification ID into Holiday Struct
-        data.notificationId = UUID().uuidString
+        // Store the notification ID in the map
+        let notificationID = UUID().uuidString
+        notificationMap[data.id] = notificationID
 
-        let request = UNNotificationRequest(identifier: data.notificationId ?? "", content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: notificationID, content: content, trigger: trigger)
 
         UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
@@ -73,12 +75,15 @@ class NotificationManager: ObservableObject {
     }
 
     func cancelNotification(for data: Holiday) {
-        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [data.notificationId ?? ""])
-        getAllPendingNotifications { current in
-            print(current)
+        guard let notificationId = notificationMap[data.id] else {
+            // No notification ID found for this holiday
+            return
         }
-        // TODO:
-        // At this moment I need to show the ToatView I mean change the value for showToastView
+        // Cancel the notification
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [notificationId])
+
+        // Remove the notification ID from the map and update the Holiday object
+        notificationMap.removeValue(forKey: data.id)
     }
 
     func getAllPendingNotifications(completion: @escaping ([UNNotificationRequest]) -> ()) {

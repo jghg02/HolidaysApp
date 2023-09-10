@@ -87,7 +87,12 @@ struct HolidayCell: View {
                 if holiday.getCountdown() != "passed".localized {
                     HStack {
                         Button {
-                            self.notificationViewModel.handleNotificationTap(for: self.holiday)
+                            if !self.notificationViewModel.isNotificationActive {
+                                self.notificationViewModel.handleNotificationTap(for: self.holiday)
+                            } else {
+                                self.notificationViewModel.removeNotification(for: self.holiday)
+                            }
+
 
                         } label: {
                             Image(systemName: self.notificationViewModel.isNotificationActive ?
