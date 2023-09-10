@@ -32,6 +32,6 @@ struct HolidayListView: View {
 
 struct HolidayListView_Previews: PreviewProvider {
     static var previews: some View {
-        HolidayListView(holidays: [Holiday(name: "NAME", comments: "COMMENTS", date: "2023-05-02", isEssential: "true", type: "Type")], nextHoliday: .init(name: "NAME", comments: "COMMENTS", date: "2023-05-02", isEssential: "true", type: "Type"))
+        HolidayListView(holidays: [Holiday.defaultValue], nextHoliday: .init(name: "NAME", comments: "COMMENTS", date: "2023-05-02", isEssential: "true", type: "Type", notificationId: nil))
     }
 }

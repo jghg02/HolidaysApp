@@ -39,7 +39,7 @@ extension Holiday {
     }
 
     static var defaultValue: Holiday {
-        .init(name: "", comments: nil, date: "", isEssential: "", type: "")
+        .init(name: "", comments: nil, date: "", isEssential: "", type: "", notificationId: nil)
     }
 
 }

@@ -15,9 +15,12 @@ struct HolidayCell: View {
     @State private var isBorderAnimated = false
     @State private var isNotificationActive = false
     @ObservedObject private var toastViewModel = ToastViewModel()
+    @ObservedObject private var notificationViewModel: NotificationViewModel =
+    NotificationViewModel(notificaitonUsesCase:
+                            NotificationUsesCase(repository:
+                                                    NotificationRepositoryImpl(notificationManager:
+                                                                                NotificationManager())))
 
-    // Notification Manager
-    @ObservedObject private var notificationManager = NotificationManager()
 
     var body: some View {
         HStack {
@@ -77,31 +80,22 @@ struct HolidayCell: View {
                         .padding(.leading)
                         .foregroundColor(.blue)
                 }
+
                 Spacer()
                 Spacer()
-                Spacer()
-//                if holiday.getCountdown() != "passed".localized {
-//                    HStack {
-//
-//                        Button {
-//                            // Toggle the notification active state first
-//                            self.isNotificationActive.toggle()
-//
-//                            if self.isNotificationActive {
-//                                // If now active, schedule the notification
-//                                notificationManager.scheduleNotification(by: holiday)
-//                            } else {
-//                                // If now inactive, cancel the notification
-//                                notificationManager.cancelNotification(for: holiday)
-//                            }
-//
-//                        } label: {
-//                            Image(systemName: self.isNotificationActive ?
-//                                  "person.2.wave.2.fill" : "person.2.wave.2")
-//                            .padding() // Add padding to increase tappable area
-//                        }
-//                    }
-//                }
+                
+                if holiday.getCountdown() != "passed".localized {
+                    HStack {
+                        Button {
+                            self.notificationViewModel.handleNotificationTap(for: self.holiday)
+
+                        } label: {
+                            Image(systemName: self.notificationViewModel.isNotificationActive ?
+                                  "person.2.wave.2.fill" : "person.2.wave.2")
+                            .padding() // Add padding to increase tappable area
+                        }
+                    }
+                }
             }
         }
         .frame(height: 170)
@@ -124,6 +118,6 @@ struct HolidayCell: View {
 
 struct HolidayCell_Previews: PreviewProvider {
     static var previews: some View {
-        HolidayCell(holiday: Holiday(name: "Dia de las Glorias Navales", comments: "", date: "2023-01-09", isEssential: "1", type: "Civil"), isNextHoliday: true)
+        HolidayCell(holiday: Holiday(name: "Dia de las Glorias Navales", comments: "", date: "2023-11-09", isEssential: "1", type: "Civil"), isNextHoliday: true)
     }
 }

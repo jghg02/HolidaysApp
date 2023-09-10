@@ -11,42 +11,24 @@ import NotificationCenter
 
 class NotificationManager: ObservableObject {
 
-    private var notificationIndetifier: String = ""
     @Published var showToastView: Bool = false
 
-    func requestNotificationPermissions() {
+    func requestNotificationPermissions(completion: @escaping (Bool) -> Void) {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
             if success {
                 print("Notification permissions granted")
-            } else if let error = error {
-                print("Failed to grant notification permissions: \(error.localizedDescription)")
-                // Here, consider providing user-facing error messages
+                completion(true)
+            } else {
+                if let error = error {
+                    print("Failed to grant notification permissions: \(error.localizedDescription)")
+                }
+                completion(false)
             }
         }
     }
 
-
-    func scheduleNotificationQuick(by data: Holiday) {
-        let content = UNMutableNotificationContent()
-        content.title = NSLocalizedString(data.name, comment: data.name)
-        content.subtitle = NSLocalizedString("Chill...🍻", comment: data.date)
-        content.sound = UNNotificationSound.default
-
-        notificationIndetifier = UUID().uuidString
-
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
-        let request = UNNotificationRequest(identifier: notificationIndetifier, content: content, trigger: trigger)
-
-        UNUserNotificationCenter.current().add(request) { error in
-            if let error = error {
-                print("Failed to schedule notification: \(error.localizedDescription)")
-                // Here, consider providing user-facing error messages
-            }
-        }
-    }
-
-    func scheduleNotification(by data: Holiday) {
-        print("Schedule....")
+    func scheduleNotification(by data: Holiday, completion: @escaping (Bool) -> Void) {
+        var data = data
         let content = UNMutableNotificationContent()
         content.title = NSLocalizedString(data.name, comment: data.name)
         content.subtitle = NSLocalizedString("🇨🇱", comment: data.date)
@@ -57,6 +39,7 @@ class NotificationManager: ObservableObject {
         dateFormatter.dateFormat = "yyyy-MM-dd" // Assuming your date format is like this
         guard let date = dateFormatter.date(from: data.date) else {
             print("Failed to parse date string")
+            completion(false)
             return
         }
 
@@ -70,27 +53,27 @@ class NotificationManager: ObservableObject {
 
         // Step 3: Create a UNCalendarNotificationTrigger with the date components
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+        // For test
+        //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
 
-        notificationIndetifier = UUID().uuidString
+        // store the notification ID into Holiday Struct
+        data.notificationId = UUID().uuidString
 
-        let request = UNNotificationRequest(identifier: notificationIndetifier, content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: data.notificationId ?? "", content: content, trigger: trigger)
 
         UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
                 print("Failed to schedule notification: \(error.localizedDescription)")
-                // Here, consider providing user-facing error messages
+                completion(false) // Notification scheduling failed
+            } else {
+                // TODO: Show the ToastView here, if necessary
+                completion(true) // Notification scheduled successfully
             }
-            // TODO: 
-            // At this moment I need to show the ToatView I mean change the value for showToastView
-        }
-        getAllPendingNotifications { current in
-            print(current)
         }
     }
 
     func cancelNotification(for data: Holiday) {
-        print("Canceled.....")
-        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [notificationIndetifier])
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [data.notificationId ?? ""])
         getAllPendingNotifications { current in
             print(current)
         }
