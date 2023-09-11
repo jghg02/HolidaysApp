@@ -53,9 +53,9 @@ class NotificationManager: ObservableObject {
         components.minute = 0 // Specify the desired minute here
 
         // Step 3: Create a UNCalendarNotificationTrigger with the date components
-        //let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
         // For test
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
 
         // Store the notification ID in the map
         let notificationID = UUID().uuidString
