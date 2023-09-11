@@ -10,6 +10,7 @@ import NotificationCenter
 
 protocol NotificationRepository {
     func requestNotificationPermission(completion: @escaping (Bool) -> Void)
+    func scheduleNotification(by holiday: Holiday, completion: @escaping (Bool) -> Void)
     func removeNotification(by holiday: Holiday)
 }
 
@@ -33,6 +34,10 @@ class NotificationRepositoryImpl: NotificationRepository {
                 }
             }
         }
+    }
+
+    func scheduleNotification(by holiday: Holiday ,completion: @escaping (Bool) -> Void) {
+        self.notificationManager.scheduleNotification(by: holiday, completion: completion)
     }
 
     func removeNotification(by holiday: Holiday) {

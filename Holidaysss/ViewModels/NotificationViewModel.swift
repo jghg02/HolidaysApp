@@ -11,7 +11,6 @@ import SwiftUI
 class NotificationViewModel: ObservableObject {
 
     private let notificatitonUsesCase: NotificationUsesCase
-    private var notificationManager = NotificationManager()
     @Published var isNotificationActive = false
 
     init(notificaitonUsesCase: NotificationUsesCase) {
@@ -27,7 +26,7 @@ class NotificationViewModel: ObservableObject {
         self.notificatitonUsesCase.requestNotificationPermission { [weak self] userAccepted in
             guard let self = self else { return }
             if userAccepted {
-                self.notificationManager.scheduleNotification(by: holiday) { isScheduled in
+                self.notificatitonUsesCase.scheduleNotification(by: holiday) { isScheduled in
                     if isScheduled {
                         DispatchQueue.main.async {
                             self.isNotificationActive = true
