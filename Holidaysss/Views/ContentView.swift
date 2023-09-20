@@ -11,7 +11,6 @@ struct ContentView: View {
 
     @EnvironmentObject var dateViewModel: DateViewModel
     @ObservedObject  private var viewModel: HolidayViewModel
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
 
     @State private var columnVisibility =   NavigationSplitViewVisibility.doubleColumn
 
@@ -21,7 +20,7 @@ struct ContentView: View {
 
     var body: some View {
         Group {
-            if horizontalSizeClass == .regular {
+            if UIDevice.isPad() {
                 // iPad
                 NavigationSplitView(columnVisibility: $columnVisibility) {
                     HolidayListView(holidays: self.viewModel.holidays,
