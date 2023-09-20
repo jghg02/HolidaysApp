@@ -32,7 +32,7 @@ struct ContentView: View {
                         self.viewModel.getNextHoliday()
                     }
                 } detail: {
-                    Text("DETAIKL")
+                    WebView(url: URL(string: "https://iosapptemplates.com/blog/ios-development/webview-swiftui")!)
                 }
                 // This style reduces the size of the detail view to make
                 // room to show the leading column(s) side-by-side
