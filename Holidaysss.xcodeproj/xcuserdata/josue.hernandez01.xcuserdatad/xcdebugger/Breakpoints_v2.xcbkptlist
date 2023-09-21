@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8C2ECE00-CD17-4328-9606-8AB8A81E0858"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7BE91370-72F8-4CBB-A377-1376A2914D32"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NETC/Sources/NETC/NETCClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F26FD7E1-7541-4EA7-8C0D-99C341104605"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NETC/Sources/NETC/NETCClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22D58F9F-19F6-4458-8194-2FE32CA2012E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NETC/Sources/NETC/NETCClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1037BA5A-46A8-41B7-867A-24F1587C6CAC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NETC/Sources/NETC/NETCClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8FFB3F5-9B71-45F1-8A95-0E407EF88F08"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NETC/Sources/NETC/NETCClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E8FFB3F5-9B71-45F1-8A95-0E407EF88F08 - d01116097f457f0a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NETC.NETCClient.request(Foundation.URLRequest) -&gt; Combine.AnyPublisher&lt;NETC.NETCResponse&lt;&#x3c4;_0_0&gt;, NETC.NETCHTTPError&lt;&#x3c4;_0_1&gt;&gt;"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NETC/Sources/NETC/NETCClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "1068">
+               </Location>
+               <Location
+                  uuid = "E8FFB3F5-9B71-45F1-8A95-0E407EF88F08 - cab9a12ad226c8e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.URLError) -&gt; NETC.NETCHTTPError&lt;&#x3c4;_0_1&gt; in NETC.NETCClient.request(Foundation.URLRequest) -&gt; Combine.AnyPublisher&lt;NETC.NETCResponse&lt;&#x3c4;_0_0&gt;, NETC.NETCHTTPError&lt;&#x3c4;_0_1&gt;&gt;"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NETC/Sources/NETC/NETCClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BEA0A1C-36DD-4792-9A7C-BC460DF96BC8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NETC/Sources/NETC/NETCClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0BEA0A1C-36DD-4792-9A7C-BC460DF96BC8 - d01116097f457f6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NETC.NETCClient.request(Foundation.URLRequest) -&gt; Combine.AnyPublisher&lt;NETC.NETCResponse&lt;&#x3c4;_0_0&gt;, NETC.NETCHTTPError&lt;&#x3c4;_0_1&gt;&gt;"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NETC/Sources/NETC/NETCClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "1360">
+               </Location>
+               <Location
+                  uuid = "0BEA0A1C-36DD-4792-9A7C-BC460DF96BC8 - 6822c97b7edf15bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Foundation.Data, __C.NSURLResponse) -&gt; Swift.Result&lt;NETC.NETCResponse&lt;&#x3c4;_0_0&gt;, NETC.NETCHTTPError&lt;&#x3c4;_0_1&gt;&gt; in NETC.NETCClient.request(Foundation.URLRequest) -&gt; Combine.AnyPublisher&lt;NETC.NETCResponse&lt;&#x3c4;_0_0&gt;, NETC.NETCHTTPError&lt;&#x3c4;_0_1&gt;&gt;"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NETC/Sources/NETC/NETCClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B72C634C-87D2-479A-BD8E-28E2BEFE49B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NETC/Sources/NETC/NETCClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3A48A48-A35E-4616-B12F-36D8F8186047"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NETC/Sources/NETC/NETCClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "handleResponse(_:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B493747-DACE-40D4-A6B2-80AA4652828A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NET/Sources/NET/NETClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5B493747-DACE-40D4-A6B2-80AA4652828A - 292392dc8fb5cdba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for NET.NETClient.request(Foundation.URLRequest) async -&gt; Swift.Result&lt;NET.NETResponse&lt;&#x3c4;_0_0&gt;, NET.NETHTTPError&lt;&#x3c4;_0_1&gt;&gt;"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NET/Sources/NET/NETClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "5B493747-DACE-40D4-A6B2-80AA4652828A - d0b11498e8ef9ad7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for NET.NETClient.request(Foundation.URLRequest) async -&gt; Swift.Result&lt;NET.NETResponse&lt;&#x3c4;_0_0&gt;, NET.NETHTTPError&lt;&#x3c4;_0_1&gt;&gt;"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NET/Sources/NET/NETClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "5B493747-DACE-40D4-A6B2-80AA4652828A - 6dc9e0d319dc81b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for NET.NETClient.request(Foundation.URLRequest) async -&gt; Swift.Result&lt;NET.NETResponse&lt;&#x3c4;_0_0&gt;, NET.NETHTTPError&lt;&#x3c4;_0_1&gt;&gt;"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NET/Sources/NET/NETClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "5B493747-DACE-40D4-A6B2-80AA4652828A - 244dfd1acf023b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for NET.NETClient.request(Foundation.URLRequest) async -&gt; Swift.Result&lt;NET.NETResponse&lt;&#x3c4;_0_0&gt;, NET.NETHTTPError&lt;&#x3c4;_0_1&gt;&gt;"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NET/Sources/NET/NETClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C11B4A37-AC54-41AC-9622-9A80A6CA61DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Library/Developer/Xcode/DerivedData/Holidaysss-edwhvjbfcssnbsgqqqgbfppmcqjg/SourcePackages/checkouts/NET/Sources/NET/NETClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "handleResponse(_:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9583BEC-5F3F-4C89-B8A1-E1F7BBB0B49F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/ViewModels/DateViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "determineNextHoliday(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18047BCA-67CD-44B8-9522-57AE0E58BC86"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Extensions/String+Extensions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "dateDetails()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "18047BCA-67CD-44B8-9522-57AE0E58BC86 - 9e1465cdca1f3f28"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swift.String.dateDetails() -&gt; Swift.Optional&lt;(day: Swift.String, weekday: Swift.String, month: Swift.String)&gt;"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Extensions/String+Extensions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "580">
+               </Location>
+               <Location
+                  uuid = "18047BCA-67CD-44B8-9522-57AE0E58BC86 - 9e1465cdca1f3f28"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swift.String.dateDetails() -&gt; Swift.Optional&lt;(day: Swift.String, weekday: Swift.String, month: Swift.String)&gt;"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Extensions/String+Extensions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "712">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C08DC586-B579-4ED3-9CC3-B5F03F0E2063"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Extensions/String+Extensions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "dateDetails()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C0A2410-1C3F-4CD7-8873-6DF1679D67B5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Notification/NotificationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "getAllPendingNotifications(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5C0A2410-1C3F-4CD7-8873-6DF1679D67B5 - a08cc845d261eb4f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Holidaysss.NotificationManager.getAllPendingNotifications(completion: (Swift.Array&lt;__C.UNNotificationRequest&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Notification/NotificationManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "5C0A2410-1C3F-4CD7-8873-6DF1679D67B5 - e1605dc0d0359877"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;__C.UNNotificationRequest&gt;) -&gt; () in Holidaysss.NotificationManager.getAllPendingNotifications(completion: (Swift.Array&lt;__C.UNNotificationRequest&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Notification/NotificationManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "5C0A2410-1C3F-4CD7-8873-6DF1679D67B5 - a08cc845d261eb6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Holidaysss.NotificationManager.getAllPendingNotifications(completion: (Swift.Array&lt;__C.UNNotificationRequest&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Notification/NotificationManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "5C0A2410-1C3F-4CD7-8873-6DF1679D67B5 - e1605dc0d0359810"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;__C.UNNotificationRequest&gt;) -&gt; () in Holidaysss.NotificationManager.getAllPendingNotifications(completion: (Swift.Array&lt;__C.UNNotificationRequest&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Notification/NotificationManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39BED37B-D242-444F-8BA3-55C3040ACBE4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Notification/NotificationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "getAllPendingNotifications(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "39BED37B-D242-444F-8BA3-55C3040ACBE4 - e1605dc0d0359877"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;__C.UNNotificationRequest&gt;) -&gt; () in Holidaysss.NotificationManager.getAllPendingNotifications(completion: (Swift.Array&lt;__C.UNNotificationRequest&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Notification/NotificationManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "39BED37B-D242-444F-8BA3-55C3040ACBE4 - e1605dc0d0359810"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;__C.UNNotificationRequest&gt;) -&gt; () in Holidaysss.NotificationManager.getAllPendingNotifications(completion: (Swift.Array&lt;__C.UNNotificationRequest&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Notification/NotificationManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55770DBF-CC00-4848-84E7-138BEB741EFE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Views/Cell/HolidayCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9DEC92BA-3FA9-48E8-A657-C321A18AB130"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Views/Cell/HolidayCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F97B0E02-7C08-48D2-8883-4AA7AF8E947A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Views/Cell/HolidayCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F2A6F91-7232-4E64-B129-506F1DD311C2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/ViewModels/NotificationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "removeNotification(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BECBD7BE-E779-4C8C-A7BC-2375C63266C4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/ViewModels/NotificationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "removeNotification(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63547B7C-3322-4E01-B6BB-956FB8DD8218"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Repository/NotificationRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "removeNotification(by:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "63547B7C-3322-4E01-B6BB-956FB8DD8218 - 4eda99c6a6b1b0b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Holidaysss.NotificationRepositoryImpl.removeNotification(by: Holidaysss.Holiday) -&gt; ()"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Repository/NotificationRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "63547B7C-3322-4E01-B6BB-956FB8DD8218 - 4eda99c6a6b1b057"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Holidaysss.NotificationRepositoryImpl.removeNotification(by: Holidaysss.Holiday) -&gt; ()"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Repository/NotificationRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A07B0252-8B1A-46EF-9B74-B07FCA9EC12B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Notification/NotificationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "cancelNotification(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34BA97EC-94AE-40C5-9A63-56F1FBF88340"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Views/HolidayListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "34BA97EC-94AE-40C5-9A63-56F1FBF88340 - af509586949e19db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwiftUI.ScrollViewProxy) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, perform: (&#x3c4;_1_0) -&gt; ()) -&gt; some&gt;&gt;.0 in Holidaysss.HolidayListView.body.getter : some"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Views/HolidayListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  uuid = "34BA97EC-94AE-40C5-9A63-56F1FBF88340 - 727ddceb98bb19d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Holidaysss.Holiday) -&gt; Holidaysss.HolidayCell in closure #1 (SwiftUI.ScrollViewProxy) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, perform: (&#x3c4;_1_0) -&gt; ()) -&gt; some&gt;&gt;.0 in Holidaysss.HolidayListView.body.getter : some"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Views/HolidayListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4DF3C4C2-9239-4955-9AA3-A90ED0CC3006"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Notification/NotificationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "cancelNotification(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E34ECEE0-B964-46AF-BB57-0D4E28DB6B6A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Notification/NotificationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "scheduleNotification(by:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6ED80CE0-3998-4660-BA2C-1952E4B35C10"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Views/HolidayListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "6ED80CE0-3998-4660-BA2C-1952E4B35C10 - db9f7db2732a9113"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Holidaysss.Holiday) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 (SwiftUI.ScrollViewProxy) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, perform: (&#x3c4;_1_0) -&gt; ()) -&gt; some&gt;&gt;.0 in Holidaysss.HolidayListView.body.getter : some"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Views/HolidayListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "6ED80CE0-3998-4660-BA2C-1952E4B35C10 - db9f7db2732a9130"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Holidaysss.Holiday) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 (SwiftUI.ScrollViewProxy) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, perform: (&#x3c4;_1_0) -&gt; ()) -&gt; some&gt;&gt;.0 in Holidaysss.HolidayListView.body.getter : some"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Views/HolidayListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "364">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A20E00D8-94D9-4B17-BD47-AFC23C0577F7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Views/HolidayListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A20E00D8-94D9-4B17-BD47-AFC23C0577F7 - 343316ec10746644"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Holidaysss.Holiday) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 (SwiftUI.ScrollViewProxy) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, perform: (&#x3c4;_1_0) -&gt; ()) -&gt; some&gt;&gt;.0 in Holidaysss.HolidayListView.body.getter : some"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Views/HolidayListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "468">
+               </Location>
+               <Location
+                  uuid = "A20E00D8-94D9-4B17-BD47-AFC23C0577F7 - 343316ec10746644"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Holidaysss.Holiday) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 (SwiftUI.ScrollViewProxy) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, perform: (&#x3c4;_1_0) -&gt; ()) -&gt; some&gt;&gt;.0 in Holidaysss.HolidayListView.body.getter : some"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Views/HolidayListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "472">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B53D722-DFF6-42C9-AA6A-7221B5557C08"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Views/HolidayListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "6B53D722-DFF6-42C9-AA6A-7221B5557C08 - db9f7db2732a9113"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Holidaysss.Holiday) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 (SwiftUI.ScrollViewProxy) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, perform: (&#x3c4;_1_0) -&gt; ()) -&gt; some&gt;&gt;.0 in Holidaysss.HolidayListView.body.getter : some"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Views/HolidayListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "336">
+               </Location>
+               <Location
+                  uuid = "6B53D722-DFF6-42C9-AA6A-7221B5557C08 - db9f7db2732a9172"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Holidaysss.Holiday) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 (SwiftUI.ScrollViewProxy) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, perform: (&#x3c4;_1_0) -&gt; ()) -&gt; some&gt;&gt;.0 in Holidaysss.HolidayListView.body.getter : some"
+                  moduleName = "Holidaysss"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josue.hernandez01/Desktop/MyApp/Me/iOS/Holidaysss/Holidaysss/Views/HolidayListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C34C85F4-146D-42DD-B691-F90F1E16524C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Holidaysss/Views/WebView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "makeUIView(context:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
