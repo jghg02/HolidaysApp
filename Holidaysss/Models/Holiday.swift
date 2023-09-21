@@ -15,6 +15,7 @@ struct Holiday: Codable, Identifiable, Equatable, Hashable {
     let isEssential: String
     let type: String
     var notificationId: String?
+    var url: String?
     
     private enum CodingKeys: String, CodingKey {
         case name = "nombre"
@@ -24,4 +25,5 @@ struct Holiday: Codable, Identifiable, Equatable, Hashable {
         case type = "tipo"
         case notificationId = "notification"
     }
+    
 }

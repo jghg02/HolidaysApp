@@ -14,3 +14,11 @@ extension DateFormatter {
         return formatter
     }()
 }
+
+extension Date {
+    func setting(_ component: Calendar.Component, to value: Int) -> Date {
+        var calendar = Calendar.current
+        calendar.timeZone = TimeZone.current
+        return calendar.date(bySetting: component, value: value, of: self) ?? self
+    }
+}
