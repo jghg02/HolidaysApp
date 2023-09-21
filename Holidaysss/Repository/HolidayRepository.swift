@@ -29,7 +29,11 @@ class HolidayRepositoryImp: HolidayRepository {
 
         switch await client.request(request) {
         case .success(let data):
-            return data.value
+            var holidays: [Holiday] = data.value
+            for index in holidays.indices {
+                holidays[index].url = Dictionary<String, String>.url(forHolidayName: holidays[index].name)
+            }
+            return holidays
         case .failure(let error):
             print(error.localizedDescription)
             return []
