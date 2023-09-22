@@ -15,7 +15,7 @@ struct ContentView: View {
     @State private var columnVisibility = NavigationSplitViewVisibility.doubleColumn
     @State private var selectedHoliday: Holiday?
 
-    init()  {
+    init() {
         self.viewModel = HolidayViewModel(getHolidaydUseCase: GetHolidaysUseCase(repository: HolidayRepositoryImp()))
     }
 
@@ -23,36 +23,48 @@ struct ContentView: View {
         Group {
             if UIDevice.isPad() {
                 // iPad
-                NavigationSplitView(columnVisibility: $columnVisibility) {
+                if self.viewModel.loadingState == .success {
+                    NavigationSplitView(columnVisibility: $columnVisibility) {
+                        HolidayListView(holidays: self.viewModel.holidays,
+                                        nextHoliday: self.viewModel.nextHoliday ?? Holiday.defaultValue,
+                                        selectedHoliday: $selectedHoliday)
+                        .navigationTitle("holidays".localized)
+                    } detail: {
+                        WebView(url: URL(string: self.selectedHoliday?.url ?? "https://www.google.com")!)
+                            .navigationTitle(self.selectedHoliday?.name ?? "")
+                    }
+                    // This style reduces the size of the detail view to make
+                    // room to show the leading column(s) side-by-side
+                    .navigationSplitViewStyle(.balanced)
+                    .task {
+                        self.viewModel.getNextHoliday()
+                        selectedHoliday = self.viewModel.nextHoliday
+                    }
+                } else if self.viewModel.loadingState == .error {
+                    ErrorView()
+                } else if self.viewModel.loadingState == .loading {
+                    LoadingView()
+                }
+            } else {
+                // iPhone
+                if self.viewModel.loadingState == .success {
                     HolidayListView(holidays: self.viewModel.holidays,
                                     nextHoliday: self.viewModel.nextHoliday ?? Holiday.defaultValue,
                                     selectedHoliday: $selectedHoliday)
                     .navigationTitle("holidays".localized)
+                    .embedNavigationView()
                     .task {
-                        await self.viewModel.getAllHolidays(by: dateViewModel.currentYear)
                         self.viewModel.getNextHoliday()
-                        selectedHoliday = self.viewModel.nextHoliday
                     }
-                } detail: {
-                    WebView(url: URL(string: self.selectedHoliday?.url ?? "https://www.google.com")!)
-                        .navigationTitle(self.selectedHoliday?.name ?? "")
+                } else if self.viewModel.loadingState == .error {
+                    ErrorView()
+                } else if self.viewModel.loadingState == .loading {
+                    LoadingView()
                 }
-                // This style reduces the size of the detail view to make
-                // room to show the leading column(s) side-by-side
-                .navigationSplitViewStyle(.balanced)
-            } else {
-                // iPhone
-                HolidayListView(holidays: self.viewModel.holidays,
-                                nextHoliday: self.viewModel.nextHoliday ?? Holiday.defaultValue,
-                                selectedHoliday: $selectedHoliday)
-                .navigationTitle("holidays".localized)
-                .embedNavigationView()
-                .task {
-                    await self.viewModel.getAllHolidays(by: dateViewModel.currentYear)
-                    self.viewModel.getNextHoliday()
-                }
-
             }
+        }
+        .task {
+            await self.viewModel.getAllHolidays(by: dateViewModel.currentYear)
         }
     }
 

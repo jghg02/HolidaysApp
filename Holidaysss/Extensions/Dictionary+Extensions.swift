@@ -11,7 +11,7 @@ extension Dictionary where Key == String, Value == String {
     static var holidayURLs: [String: String] {
         return [
             "Año Nuevo": "https://es.wikipedia.org/wiki/A%C3%B1o_Nuevo",
-            "Feriado Adicional": "https://www.google.com",
+            "Feriado Adicional": "https://shorturl.at/bdgTW",
             "Viernes Santo": "https://es.wikipedia.org/wiki/Viernes_Santo",
             "Sábado Santo": "https://es.wikipedia.org/wiki/S%C3%A1bado_Santo",
             "Día Nacional del Trabajo": "https://es.wikipedia.org/wiki/D%C3%ADa_Internacional_de_los_Trabajadores",

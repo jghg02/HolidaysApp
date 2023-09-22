@@ -16,7 +16,7 @@ struct SplashView: View {
             if self.isActive {
                 ContentView()
             } else {
-                LottieView(loopMode: .loop)
+                LottieView(loopMode: .loop, resource: "wine")
                     .scaleEffect(0.6)
             }
         }

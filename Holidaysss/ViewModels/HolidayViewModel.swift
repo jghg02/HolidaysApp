@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 import NET
 
-class HolidayViewModel: ObservableObject {
+class HolidayViewModel: ViewModelBase {
 
     private let getHolidayUsesCase: GetHolidaysUseCase
     @Published var holidays: [Holiday] = []
@@ -24,7 +24,13 @@ class HolidayViewModel: ObservableObject {
         do {
             let fetchedHolidays = await self.getHolidayUsesCase.execute(by: year)
             DispatchQueue.main.async {
-                self.holidays = fetchedHolidays
+                if fetchedHolidays.isEmpty {
+                    self.loadingState = .error
+                } else {
+                    self.holidays = fetchedHolidays
+                    self.loadingState = .success
+                }
+
             }
         }
     }
