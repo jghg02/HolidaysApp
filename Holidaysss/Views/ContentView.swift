@@ -16,7 +16,7 @@ struct ContentView: View {
     @State private var selectedHoliday: Holiday?
 
     init() {
-        self.viewModel = HolidayViewModel(getHolidaydUseCase: GetHolidaysUseCase(repository: HolidayRepositoryImp()))
+        self.viewModel = HolidayViewModel(getHolidaydUseCase: GetHolidaysUseCase(repository: HolidayRepositoryImp(dateVM: DateViewModel())))
     }
 
     var body: some View {

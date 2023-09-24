@@ -16,7 +16,11 @@ protocol HolidayRepository {
 
 class HolidayRepositoryImp: HolidayRepository {
 
-    private let dateVM = DateViewModel()
+    private let dateVM: DateViewModel
+
+    init(dateVM: DateViewModel) {
+        self.dateVM = dateVM
+    }
 
     func getAllHoliday(by year: String) async -> [Holiday] {
 
