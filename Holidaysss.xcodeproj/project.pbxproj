@@ -17,6 +17,7 @@
 		9602DD0B2AAE142C00B2303E /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9602DD0A2AAE142C00B2303E /* NotificationViewModel.swift */; };
 		9602DD0D2AAE145700B2303E /* NotificationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9602DD0C2AAE145700B2303E /* NotificationRepository.swift */; };
 		9602DD0F2AAE17E200B2303E /* NotificationUsesCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9602DD0E2AAE17E200B2303E /* NotificationUsesCase.swift */; };
+		9616AD3F2AC4AEA4007AB2D6 /* chile.json in Resources */ = {isa = PBXBuildFile; fileRef = 9616AD3E2AC4AEA4007AB2D6 /* chile.json */; };
 		964450192AA2D80400EB116E /* HolidaysssApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964450182AA2D80400EB116E /* HolidaysssApp.swift */; };
 		9644501B2AA2D80400EB116E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644501A2AA2D80400EB116E /* ContentView.swift */; };
 		9644501D2AA2D80800EB116E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9644501C2AA2D80800EB116E /* Assets.xcassets */; };
@@ -42,7 +43,6 @@
 		96A4B79C2AA7832300E332AE /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4B79B2AA7832300E332AE /* SplashView.swift */; };
 		96A4B7A22AA7898D00E332AE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 96A4B7A12AA7898D00E332AE /* Lottie */; };
 		96A4B7A52AA78A0600E332AE /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4B7A42AA78A0600E332AE /* LottieView.swift */; };
-		96A4B7A92AA78B7A00E332AE /* wine.json in Resources */ = {isa = PBXBuildFile; fileRef = 96A4B7A82AA78B7A00E332AE /* wine.json */; };
 		96A4B7AC2AA79FE700E332AE /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4B7AB2AA79FE700E332AE /* NotificationManager.swift */; };
 		96A4B7B42AAA29FD00E332AE /* Holiday+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4B7B32AAA29FD00E332AE /* Holiday+Extensions.swift */; };
 		96A4B7B62AAA2A5800E332AE /* GetHolidaysUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4B7B52AAA2A5800E332AE /* GetHolidaysUseCase.swift */; };
@@ -77,6 +77,7 @@
 		9602DD0A2AAE142C00B2303E /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		9602DD0C2AAE145700B2303E /* NotificationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepository.swift; sourceTree = "<group>"; };
 		9602DD0E2AAE17E200B2303E /* NotificationUsesCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUsesCase.swift; sourceTree = "<group>"; };
+		9616AD3E2AC4AEA4007AB2D6 /* chile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chile.json; sourceTree = "<group>"; };
 		964450152AA2D80300EB116E /* Holidaysss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holidaysss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		964450182AA2D80400EB116E /* HolidaysssApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysssApp.swift; sourceTree = "<group>"; };
 		9644501A2AA2D80400EB116E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,7 +104,6 @@
 		969458672AA6AE4F005C7918 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = Localizable.strings; sourceTree = "<group>"; };
 		96A4B79B2AA7832300E332AE /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		96A4B7A42AA78A0600E332AE /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		96A4B7A82AA78B7A00E332AE /* wine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wine.json; sourceTree = "<group>"; };
 		96A4B7AB2AA79FE700E332AE /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		96A4B7B32AAA29FD00E332AE /* Holiday+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Holiday+Extensions.swift"; sourceTree = "<group>"; };
 		96A4B7B52AAA2A5800E332AE /* GetHolidaysUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHolidaysUseCase.swift; sourceTree = "<group>"; };
@@ -295,8 +295,8 @@
 		96A4B7A32AA789B300E332AE /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				9616AD3E2AC4AEA4007AB2D6 /* chile.json */,
 				9600C2CF2ABDD6AF0078C666 /* error.json */,
-				96A4B7A82AA78B7A00E332AE /* wine.json */,
 				96A4B7A42AA78A0600E332AE /* LottieView.swift */,
 			);
 			path = Lottie;
@@ -442,12 +442,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9616AD3F2AC4AEA4007AB2D6 /* chile.json in Resources */,
 				9600C2D02ABDD6AF0078C666 /* error.json in Resources */,
 				964450202AA2D80800EB116E /* Preview Assets.xcassets in Resources */,
 				969458682AA6AE4F005C7918 /* Localizable.strings in Resources */,
 				969458642AA6ADA2005C7918 /* Localizable.strings in Resources */,
 				9644501D2AA2D80800EB116E /* Assets.xcassets in Resources */,
-				96A4B7A92AA78B7A00E332AE /* wine.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
