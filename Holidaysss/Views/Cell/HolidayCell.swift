@@ -83,7 +83,8 @@ struct HolidayCell: View {
 
                 Spacer()
                 Spacer()
-                
+
+                /*
                 if holiday.getCountdown() != "passed".localized {
                     HStack {
                         Button {
@@ -101,6 +102,7 @@ struct HolidayCell: View {
                         }
                     }
                 }
+                 */
             }
         }
         .frame(height: 170)
