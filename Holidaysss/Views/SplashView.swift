@@ -32,7 +32,7 @@ struct SplashView: View {
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                 withAnimation {
-                    self.isActive = false
+                    self.isActive = true
                 }
             }
         }
