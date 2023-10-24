@@ -47,6 +47,8 @@
 		96A4B7B42AAA29FD00E332AE /* Holiday+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4B7B32AAA29FD00E332AE /* Holiday+Extensions.swift */; };
 		96A4B7B62AAA2A5800E332AE /* GetHolidaysUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4B7B52AAA2A5800E332AE /* GetHolidaysUseCase.swift */; };
 		96A4B7B92AAA377100E332AE /* HolidayRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4B7B82AAA377100E332AE /* HolidayRepository.swift */; };
+		96B31FD52AE70DAC0001F3A1 /* ConfigModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B31FD42AE70DAC0001F3A1 /* ConfigModalView.swift */; };
+		96B31FDB2AE7EA620001F3A1 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B31FDA2AE7EA620001F3A1 /* MailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,8 @@
 		96A4B7B32AAA29FD00E332AE /* Holiday+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Holiday+Extensions.swift"; sourceTree = "<group>"; };
 		96A4B7B52AAA2A5800E332AE /* GetHolidaysUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHolidaysUseCase.swift; sourceTree = "<group>"; };
 		96A4B7B82AAA377100E332AE /* HolidayRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayRepository.swift; sourceTree = "<group>"; };
+		96B31FD42AE70DAC0001F3A1 /* ConfigModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigModalView.swift; sourceTree = "<group>"; };
+		96B31FDA2AE7EA620001F3A1 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +245,8 @@
 				964FC6E52ABB580B00A8B0CB /* WebView.swift */,
 				9600C2CD2ABDD5E90078C666 /* ErrorView.swift */,
 				9600C2D32ABDEB150078C666 /* LoadingView.swift */,
+				96B31FD42AE70DAC0001F3A1 /* ConfigModalView.swift */,
+				96B31FDA2AE7EA620001F3A1 /* MailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -476,6 +482,7 @@
 				96944E5E2AA650D3005C7918 /* DateViewModel.swift in Sources */,
 				9602DD092AAB95B100B2303E /* ToastViewModel.swift in Sources */,
 				96944E652AA665DA005C7918 /* String+Extensions.swift in Sources */,
+				96B31FDB2AE7EA620001F3A1 /* MailView.swift in Sources */,
 				96A4B7A52AA78A0600E332AE /* LottieView.swift in Sources */,
 				96944E602AA652AA005C7918 /* View+Extensions.swift in Sources */,
 				964450492AA3F7AE00EB116E /* Holiday.swift in Sources */,
@@ -484,6 +491,7 @@
 				96944E5A2AA64082005C7918 /* HolidayListView.swift in Sources */,
 				964FC6E62ABB580B00A8B0CB /* WebView.swift in Sources */,
 				96944E632AA660E7005C7918 /* HolidayCell.swift in Sources */,
+				96B31FD52AE70DAC0001F3A1 /* ConfigModalView.swift in Sources */,
 				9602DD072AAB802B00B2303E /* ToastView.swift in Sources */,
 				96944E5C2AA64B7E005C7918 /* Date+Extensions.swift in Sources */,
 				964FC6E82ABB84EA00A8B0CB /* UIDevice+Extensions.swift in Sources */,

@@ -15,6 +15,9 @@ struct ContentView: View {
     @State private var columnVisibility = NavigationSplitViewVisibility.doubleColumn
     @State private var selectedHoliday: Holiday?
 
+    @State private var showModalConfig: Bool = false
+    @State private var sheetHeight: CGFloat = .zero
+
     init() {
         self.viewModel = HolidayViewModel(getHolidaydUseCase: GetHolidaysUseCase(repository: HolidayRepositoryImp(dateVM: DateViewModel())))
     }
@@ -52,6 +55,21 @@ struct ContentView: View {
                                     nextHoliday: self.viewModel.nextHoliday ?? Holiday.defaultValue,
                                     selectedHoliday: $selectedHoliday)
                     .navigationTitle("holidays".localized)
+                    .navigationBarItems(trailing:
+                                            Button(action: {
+                        // SHoe the config modal
+                        self.showModalConfig.toggle()
+                    }) {
+                        Image(systemName: "gear")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    })
+                    // Sheet modal config
+                    .sheet(isPresented: $showModalConfig, content: {
+                        ConfigModalView()
+                    })
+                    .padding()
+                    .modifier(GetHeightModifier(height: $sheetHeight))
                     .embedNavigationView()
                     .task {
                         self.viewModel.getNextHoliday()
