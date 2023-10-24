@@ -68,7 +68,6 @@ struct ContentView: View {
                     .sheet(isPresented: $showModalConfig, content: {
                         ConfigModalView()
                     })
-                    .padding()
                     .modifier(GetHeightModifier(height: $sheetHeight))
                     .embedNavigationView()
                     .task {
